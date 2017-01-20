@@ -6,20 +6,20 @@
     <property name="visible">True</property>
     <property name="can_focus">False</property>
     <property name="title" translatable="yes">Foot-Click</property>
-    <property name="icon_name">mouse</property>
+    <property name="icon">/usr/share/icons/breeze/devices/64/input-mouse.svg</property>
     <signal name="destroy" handler="on_mainWindow_destroy" swapped="no"/>
     <child>
       <object class="GtkGrid" id="grid1">
         <property name="visible">True</property>
         <property name="can_focus">False</property>
         <child>
-          <object class="GtkButton" id="myButton">
+          <object class="GtkButton" id="multiBureaux">
             <property name="label" translatable="yes">Multi-bureaux</property>
             <property name="name">myButton</property>
             <property name="visible">True</property>
             <property name="can_focus">True</property>
             <property name="receives_default">True</property>
-            <signal name="clicked" handler="on_myButton_clicked" swapped="no"/>
+            <signal name="clicked" handler="on_multiBureaux_clicked" swapped="no"/>
           </object>
           <packing>
             <property name="left_attach">0</property>
@@ -27,11 +27,12 @@
           </packing>
         </child>
         <child>
-          <object class="GtkButton" id="button2">
+          <object class="GtkButton" id="copierColler">
             <property name="label" translatable="yes">Copier/Coller</property>
             <property name="visible">True</property>
             <property name="can_focus">True</property>
             <property name="receives_default">True</property>
+            <signal name="clicked" handler="on_copierColler_clicked" swapped="no"/>
           </object>
           <packing>
             <property name="left_attach">1</property>
@@ -39,11 +40,12 @@
           </packing>
         </child>
         <child>
-          <object class="GtkButton" id="button3">
+          <object class="GtkButton" id="favorite">
             <property name="label" translatable="yes">Applis favorites</property>
             <property name="visible">True</property>
             <property name="can_focus">True</property>
             <property name="receives_default">True</property>
+            <signal name="clicked" handler="on_favorite_clicked" swapped="no"/>
           </object>
           <packing>
             <property name="left_attach">2</property>
@@ -51,11 +53,12 @@
           </packing>
         </child>
         <child>
-          <object class="GtkButton" id="button4">
-            <property name="label" translatable="yes">Perso</property>
+          <object class="GtkButton" id="media">
+            <property name="label" translatable="yes">Media</property>
             <property name="visible">True</property>
             <property name="can_focus">True</property>
             <property name="receives_default">True</property>
+            <signal name="clicked" handler="on_media_clicked" swapped="no"/>
           </object>
           <packing>
             <property name="left_attach">3</property>
@@ -63,12 +66,12 @@
           </packing>
         </child>
         <child>
-          <object class="GtkButton" id="buttonStop">
-            <property name="label" translatable="yes">Avancé</property>
+          <object class="GtkButton" id="son">
+            <property name="label" translatable="yes">son</property>
             <property name="visible">True</property>
             <property name="can_focus">True</property>
             <property name="receives_default">True</property>
-            <signal name="clicked" handler="on_buttonStop_clicked" swapped="no"/>
+            <signal name="clicked" handler="on_son_clicked" swapped="no"/>
           </object>
           <packing>
             <property name="left_attach">4</property>
@@ -79,8 +82,9 @@
           <object class="GtkImage" id="image1">
             <property name="visible">True</property>
             <property name="can_focus">False</property>
-            <property name="pixel_size">30</property>
-            <property name="icon_name">mouse</property>
+            <property name="margin_right">63</property>
+            <property name="pixbuf">/usr/share/icons/breeze/devices/64/input-mouse.svg</property>
+            <property name="pixel_size">40</property>
           </object>
           <packing>
             <property name="left_attach">0</property>
@@ -91,25 +95,12 @@
           <object class="GtkSwitch" id="switch1">
             <property name="visible">True</property>
             <property name="can_focus">True</property>
+            <property name="margin_right">4</property>
             <property name="margin_top">3</property>
             <property name="margin_bottom">3</property>
           </object>
           <packing>
             <property name="left_attach">1</property>
-            <property name="top_attach">0</property>
-          </packing>
-        </child>
-        <child>
-          <object class="GtkLinkButton" id="linkbutton1">
-            <property name="label" translatable="yes">button</property>
-            <property name="visible">True</property>
-            <property name="can_focus">True</property>
-            <property name="receives_default">True</property>
-            <property name="relief">none</property>
-            <property name="uri">http://glade.gnome.org</property>
-          </object>
-          <packing>
-            <property name="left_attach">4</property>
             <property name="top_attach">0</property>
           </packing>
         </child>
@@ -128,7 +119,7 @@
           </packing>
         </child>
         <child>
-          <object class="GtkLabel" id="label1">
+          <object class="GtkLabel" id="Label">
             <property name="visible">True</property>
             <property name="can_focus">False</property>
             <property name="label" translatable="yes">label</property>
@@ -139,15 +130,15 @@
           </packing>
         </child>
         <child>
-          <object class="GtkLabel" id="label2">
+          <object class="GtkLabel" id="Config 1">
             <property name="visible">True</property>
             <property name="can_focus">False</property>
             <property name="label" translatable="yes">
-Config n°1
+Config bureaux
 
--Tout les bureaux
--Bureau prèc
--Bureau suiv
+1- Tout les bureaux
+2- Bureau prèc
+3- Bureau suiv
 
 </property>
             <property name="width_chars">15</property>
@@ -158,15 +149,15 @@ Config n°1
           </packing>
         </child>
         <child>
-          <object class="GtkLabel" id="label3">
+          <object class="GtkLabel" id="Config 2">
             <property name="visible">True</property>
             <property name="can_focus">False</property>
             <property name="label" translatable="yes">
-Config n°2
+Config copie
 
--Ctrl+C
--Ctrl+V
--Ctrl+X
+1- Copier
+2- Coller
+3- Couper
 
 </property>
             <property name="width_chars">15</property>
@@ -177,15 +168,15 @@ Config n°2
           </packing>
         </child>
         <child>
-          <object class="GtkLabel" id="label4">
+          <object class="GtkLabel" id="Config 3">
             <property name="visible">True</property>
             <property name="can_focus">False</property>
             <property name="label" translatable="yes">
-Config n°3
+Config applis
 
--Facebook
--Twitter
--Thunderbird
+1- Thunderbird
+2- Facebook
+3- Twitter
 
 </property>
             <property name="width_chars">15</property>
@@ -196,15 +187,15 @@ Config n°3
           </packing>
         </child>
         <child>
-          <object class="GtkLabel" id="label5">
+          <object class="GtkLabel" id="Config 4">
             <property name="visible">True</property>
             <property name="can_focus">False</property>
             <property name="label" translatable="yes">
-Config n°4
+Config média
 
--
--
--
+1- Pause/Lecture
+2- Retour
+3- Avance
 
 </property>
             <property name="width_chars">15</property>
@@ -215,15 +206,15 @@ Config n°4
           </packing>
         </child>
         <child>
-          <object class="GtkLabel" id="label6">
+          <object class="GtkLabel" id="Config perso">
             <property name="visible">True</property>
             <property name="can_focus">False</property>
             <property name="label" translatable="yes">
-Config perso
+Config son
 
--
--
--
+1- Volume -
+2- Volume +
+3- Muet
 
 </property>
             <property name="width_chars">15</property>
@@ -231,6 +222,65 @@ Config perso
           <packing>
             <property name="left_attach">4</property>
             <property name="top_attach">1</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkLabel" id="label1">
+            <property name="visible">True</property>
+            <property name="can_focus">False</property>
+            <property name="label" translatable="yes">
+Config avancé
+
+1- 
+2- 
+3- 
+
+</property>
+          </object>
+          <packing>
+            <property name="left_attach">5</property>
+            <property name="top_attach">1</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkLinkButton" id=" by">
+            <property name="label" translatable="yes">By Jean Bonnard</property>
+            <property name="name">by1</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="receives_default">True</property>
+            <property name="has_tooltip">True</property>
+            <property name="relief">none</property>
+            <property name="uri">https://github.com/JeanBonnard</property>
+          </object>
+          <packing>
+            <property name="left_attach">5</property>
+            <property name="top_attach">0</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkButton" id="buttonStop">
+            <property name="label" translatable="yes">STOP</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="receives_default">True</property>
+            <signal name="clicked" handler="on_buttonStop_clicked" swapped="no"/>
+          </object>
+          <packing>
+            <property name="left_attach">4</property>
+            <property name="top_attach">0</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkButton" id="advance">
+            <property name="label" translatable="yes">Avancé</property>
+            <property name="visible">True</property>
+            <property name="can_focus">True</property>
+            <property name="receives_default">True</property>
+          </object>
+          <packing>
+            <property name="left_attach">5</property>
+            <property name="top_attach">2</property>
           </packing>
         </child>
       </object>
