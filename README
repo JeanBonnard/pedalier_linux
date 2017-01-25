@@ -1,0 +1,7 @@
+installer xdotool: sudo apt-get install xdotool
+
+echo 'export PATH=/home/jean/Arduino/projet_pedalier/:$PATH' >> /home/jean/.bashrc
+
+changer dans FootClick.py le chemin de destination de FootClick.glade avec votre chemin
+
+
