@@ -1,0 +1,17 @@
+{
+"copier":"        subprocess.call('xdotool key '+'ctrl+c', shell=True)",
+"coller":"        subprocess.call('xdotool key '+'ctrl+v', shell=True)",
+"couper":"        subprocess.call('xdotool key '+'ctrl+x', shell=True)",
+"thunderbird":"        subprocess.Popen(['thunderbird'])",
+"facebook":[{"commande":"        subprocess.Popen(['firefox'])"},{"commande":"        time.sleep(2)"},{"commande":"        subprocess.call('xdotool key '+'ctrl+l', shell = True)"},{"commande":"        subprocess.call('xdotool type '+'www.facebook.fr', shell = True)"},{"commande":"        subprocess.call('xdotool key '+'Return', shell = True)"}],
+"twitter":[{"commande":"        subprocess.Popen(['firefox'])"},{"commande":"        time.sleep(2)"},{"commande":"        subprocess.call('xdotool key '+'ctrl+l', shell = True)"},{"commande":"        subprocess.call('xdotool type '+'www.twitter.fr', shell = True)"},{"commande":"        subprocess.call('xdotool key '+'Return', shell = True)"}],
+"playPause":"        subprocess.call('xdotool key '+'space', shell=True)",
+"retRapide":"        subprocess.call('xdotool key '+'Alt+Left', shell=True)",
+"avRapide":"        subprocess.call('xdotool key '+'Alt+Right', shell=True)",
+"toutBureaux":"        subprocess.call('xdotool key '+'ctrl+alt+Up', shell=True)",
+"bureauPrec":"        subprocess.call('xdotool key '+'ctrl+alt+Left', shell=True)",
+"bureauSuiv":"        subprocess.call('xdotool key '+'ctrl+alt+Right', shell=True)",
+"dimVolume":"        subprocess.call('xdotool key '+'XF86AudioLowerVolume', shell=True)",
+"muet":"        subprocess.call('xdotool key '+'XF86AudioMute', shell=True)",
+"augVolume":"        subprocess.call('xdotool key '+'XF86AudioRaiseVolume', shell=True)"
+}

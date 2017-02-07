@@ -1,7 +1,4 @@
 #!/bin/bash
-<<<<<<< HEAD
+
 cd /home/jean/FootClick
 python FootClick.py
-=======
-python /home/jean/Arduino/projet_pedalier/FootClick.py
->>>>>>> 9a7a21579e6b34b401eebfe3f6234ed6f6f85477

@@ -1,7 +1,17 @@
-installer xdotool: sudo apt-get install xdotool
+mettre FootClick dans le path comme ici ==>
 
-echo 'export PATH=/home/jean/Arduino/projet_pedalier/:$PATH' >> /home/jean/.bashrc
+echo 'export PATH=/home/utilisateur/FootClick/:$PATH' >> /home/utilisateur/.bashrcl
 
-changer dans FootClick.py le chemin de destination de FootClick.glade avec votre chemin
+les module facebook et twitter sont parametrés pour fonctionner avec firefox
 
+la configuration du mode avancé se fait de la maniere suivante :  	1-bouton1
+																	2-une commande
+																	3-bouton2
+																	4-une commande
+																	5-bouton3
+																	6-une commande
 
+le mode avancé sera actif tant que vous ne recliqué pas sur le bouton avancé, dans ce cas, le fichier de config sera netoyer et vous pourrez en editer un autre
+notez donc que si vous cliquez sur avancé, mais refermé la fenetre de config sans avoir edité votre mode... le fichier de config sera donc vide .
+
+cliquez sur GO pour lancer la config avancer une fois vos choix effectuer.
